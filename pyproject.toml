@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "llmin"
+version = "0.1.0"
+description = ""
+authors = ["Rafael Pierre <rafael.pierre@huggingface.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.39.1"
+torch = "^2.2.2"
+peft = "^0.10.0"
+huggingface-hub = "^0.22.1"
+safetensors = "^0.4.2"
+accelerate = "^0.28.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+ipykernel = "^6.29.4"
+jupyter = "^1.0.0"
+ipywidgets = "^8.1.2"
+
+[tool.pytest.ini_options]
+log_level = "DEBUG"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
