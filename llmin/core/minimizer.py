@@ -54,7 +54,6 @@ class Minimizer:
         layer_map = [original_layers]
         layer_map.extend(additional_layers)
 
-        
         base_model = copy.deepcopy(target_model)
         replicate_layers(model = base_model,layer_map = layer_map)
         del target_model
