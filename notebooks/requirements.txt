@@ -1,9 +1,0 @@
-ipykernel
-transformers
-torch
-peft
-bitsandbytes
-accelerate
-jupyter
-ipywidgets
-datasets
